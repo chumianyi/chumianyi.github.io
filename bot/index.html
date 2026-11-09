@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>小鸟游星野 · YueWuBot 官方机器人</title>
+<meta name="description" content="YueWuBot 官方 QQ 机器人「小鸟游星野霸占地球」，QQ 3930535663。能聊天、点歌、解析视频、查天气，也能在群里签到、看图、管理秩序。">
+<meta name="keywords" content="YueWuBot,QQ机器人,小鸟游星野,官方机器人,点歌,视频解析">
+<meta name="theme-color" content="#f8fbff">
+<link rel="canonical" href="https://chumianyi.github.io/bot/">
+<link rel="icon" type="image/webp" href="assets/avatar-128.webp">
+<link rel="apple-touch-icon" href="assets/avatar-128.webp">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="YueWuBot">
+<meta property="og:title" content="小鸟游星野 · YueWuBot 官方机器人">
+<meta property="og:description" content="QQ 3930535663 · 已恢复人格。官方机器人，加个好友吧。">
+<meta property="og:url" content="https://chumianyi.github.io/bot/">
+<meta property="og:image" content="https://chumianyi.github.io/bot/assets/avatar.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="小鸟游星野 · YueWuBot 官方机器人">
+<meta name="twitter:description" content="QQ 3930535663 · 已恢复人格。官方机器人，加个好友吧。">
+<meta name="twitter:image" content="https://chumianyi.github.io/bot/assets/avatar.webp">
+<link rel="stylesheet" href="assets/bot.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="bot-id" href="index.html" aria-label="官方机器人首页">
+      <img src="assets/avatar-128.webp" alt="小鸟游星野头像" width="34" height="34">
+      <span><b>小鸟游星野</b><small>YueWuBot 官方机器人</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="页面导航">
+      <a href="#abilities">能做什么</a>
+      <a href="#commands">常用指令</a>
+      <a href="#plugins">插件</a>
+      <a href="#start">怎么用</a>
+      <a href="#faq">常见问题</a>
+      <a href="docs.html">使用手册</a>
+    </nav>
+    <div class="nav-spacer"></div>
+    <a class="btn primary" href="https://qm.qq.com/q/6MKLeBIvJu" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+      加为好友
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <span class="status"><i></i>在线<em>· 基于 YueWuBot v1.4.1</em></span>
+      <h1>
+        <span class="name-line">小鸟游星野</span>
+        <span class="name-line">霸占地球<span class="emoji">🌏</span></span>
+      </h1>
+      <div class="handle">
+        <span class="tag">QQ <b>3930535663</b></span>
+        <span class="tag">ID <b>Kismetless</b></span>
+        <span class="tag">官方</span>
+      </div>
+      <p class="sig">签名：<strong>「已恢复人格」</strong></p>
+      <p class="desc">住在 QQ 里的日常搭子。可以陪聊，也能点歌、解析视频、查天气，或者在群里安安静静地签到、收图。最喜欢的事，是被人想起来。</p>
+      <div class="hero-cta">
+        <a class="btn primary qq-join" href="https://qm.qq.com/q/6MKLeBIvJu" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          加她为好友
+        </a>
+        <a class="btn ghost" href="#abilities">看看能做什么</a>
+      </div>
+      <p class="hero-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+        点击后跳转 QQ 添加好友页，也可在 QQ 内搜索 3930535663
+      </p>
+    </div>
+
+    <div class="profile-wrap">
+      <div class="profile-glow" aria-hidden="true"></div>
+      <div class="card">
+        <div class="card-top"><span class="hint">个人资料</span></div>
+        <div class="card-body">
+          <div class="card-avatar"><img src="assets/avatar.webp" alt="小鸟游星野的头像" width="96" height="96"></div>
+          <h2 class="card-name">小鸟游星野霸占地球<span class="emoji">🌏</span></h2>
+          <div class="card-sub">
+            <span class="qq">QQ 3930535663</span>
+            <span class="dot"></span>
+            <span>ID: Kismetless</span>
+            <span class="card-status"><i></i>在线</span>
+          </div>
+          <div class="card-rows">
+            <div class="card-row">
+              <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>签名</span>
+              <span class="v">已恢复人格</span>
+            </div>
+            <div class="card-row">
+              <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg>性别</span>
+              <span class="v">女</span>
+            </div>
+            <div class="card-row">
+              <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>生日</span>
+              <span class="v">1月2日<small>摩羯座</small></span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>YueWuBot 官方机器人</span>
+            <a href="https://qm.qq.com/q/6MKLeBIvJu" target="_blank" rel="noopener noreferrer">加好友</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="abilities">
+  <div class="sec-in">
+    <div class="sec-head">
+      <span class="eyebrow">Capabilities</span>
+      <h2>不只是会聊天，<em>还挺能干活</em></h2>
+      <p class="sub">核心是一个轻量的大模型对话引擎，外面挂着十来个插件。群聊里 @ 她，或者用斜杠指令，都能叫得动。</p>
+    </div>
+    <div class="features">
+      <article class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3v-6a8 8 0 0 1 8-8h2a8 8 0 0 1 8 3Z"/><path d="M9 12h.01M13 12h.01M17 12h.01"/></svg></div>
+        <b>日常闲聊</b>
+        <p>接入 OpenAI / Anthropic 兼容模型，支持上下文记忆与图片理解。群里 @ 她，或直接以 / 开头说话。</p>
+        <div class="tags"><span>@她</span><span>/内容</span><span>#快速对话</span></div>
+      </article>
+      <article class="feature">
+        <div class="ic pink"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><path d="M11 18V6l10-2v12"/></svg></div>
+        <b>网易云点歌</b>
+        <p>搜歌、点歌、发封面与播放直链，支持音乐卡片。曲库直连官方接口，不需要额外服务。</p>
+        <div class="tags"><span>/网易搜歌 晴天</span><span>/网易点歌 1</span></div>
+      </article>
+      <article class="feature">
+        <div class="ic green"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></svg></div>
+        <b>视频解析</b>
+        <p>把 B 站或抖音链接丢进群里，自动回标题、播放器链接、直链与封面，不下载文件。</p>
+        <div class="tags"><span>B站链接</span><span>抖音链接</span><span>/解析</span></div>
+      </article>
+      <article class="feature">
+        <div class="ic gold"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></div>
+        <b>天气查询</b>
+        <p>问一句「天气 上海」，就能拿到实时温度、体感、湿度与未来几天的简要趋势。</p>
+        <div class="tags"><span>/天气 城市</span></div>
+      </article>
+      <article class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="m9 15 2 2 4-4"/></svg></div>
+        <b>签到与日常</b>
+        <p>每天签到记连续天数，断签归零；闲下来还能领一张随机壁纸，或者让人给你点十个赞。</p>
+        <div class="tags"><span>/签到</span><span>/来张图</span><span>赞我</span></div>
+      </article>
+      <article class="feature">
+        <div class="ic green"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16.5 3.6a3.5 3.5 0 0 1 0 6.8"/></svg></div>
+        <b>群管理与秩序</b>
+        <p>入群欢迎、好友与邀请审批、黑名单，以及管理员用 /广播 把一条消息转发到所有群。</p>
+        <div class="tags"><span>入群欢迎</span><span>/同意</span><span>/广播</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="commands">
+  <div class="sec-in">
+    <div class="sec-head">
+      <span class="eyebrow">Commands</span>
+      <h2>几句话，<em>就把她叫来了</em></h2>
+      <p class="sub">群聊里 @ 她可以正常聊天；斜杠指令不需要 @，直接发就行。下面是最常用的几个。</p>
+    </div>
+    <div class="cmd-wrap">
+      <div class="cmd-list">
+        <div class="cmd-item"><code>/网易搜歌 晴天</code><span class="txt">搜一首歌<small>返回歌曲列表与封面，用序号点播</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+        <div class="cmd-item"><code>/网易点歌 1</code><span class="txt">点播搜索结果<small>发音乐卡片与播放直链</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+        <div class="cmd-item"><code>/解析 &lt;链接&gt;</code><span class="txt">解析视频<small>B站、抖音，也可直接发链接</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+        <div class="cmd-item"><code>/天气 上海</code><span class="txt">查询天气<small>实时温度、体感、湿度与趋势</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+        <div class="cmd-item"><code>/签到</code><span class="txt">每日签到<small>记录连续天数，数据落盘不丢</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+        <div class="cmd-item"><code>/菜单</code><span class="txt">打开使用手册<small>网页打不开时发 /helps noweb</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+        <div class="cmd-item"><code>#YueWu</code><span class="txt">运行状态<small>版本、运行时长与当前状态</small></span><svg class="arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></div>
+      </div>
+      <div class="chat">
+        <div class="chat-head">
+          <img src="assets/avatar-128.webp" alt="头像" width="26" height="26">
+          <b>小鸟游星野</b>
+          <span><i></i>在线</span>
+        </div>
+        <div class="chat-body">
+          <div class="msg me"><div class="bub">今天有点累，来首歌吧</div></div>
+          <div class="msg"><div class="av"><img src="assets/avatar-128.webp" alt="" width="28" height="28"></div><div class="bub">好呀，想听什么？直接 <span class="em">/网易搜歌 歌名</span> 就行。</div></div>
+          <div class="msg me"><div class="bub">/网易搜歌 晴天</div></div>
+          <div class="msg"><div class="av"><img src="assets/avatar-128.webp" alt="" width="28" height="28"></div><div class="bub">找到 10 首相关歌曲，第 1 首是周杰伦《晴天》。想听的话发 <span class="em">/网易点歌 1</span>。</div></div>
+          <div class="msg me"><div class="bub">https://b23.tv/xxxxxx</div></div>
+          <div class="msg"><div class="av"><img src="assets/avatar-128.webp" alt="" width="28" height="28"></div><div class="bub">【B站】标题解析好了，播放器链接和封面都放在下面啦。</div></div>
+        </div>
+        <div class="chat-foot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5l3 2"/></svg>
+          示例对话，实际回复以群内为准
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="plugins">
+  <div class="sec-in">
+    <div class="sec-head center">
+      <span class="eyebrow">Plugins</span>
+      <h2>她的技能，<em>还在长</em></h2>
+      <p class="sub">插件式扩展，装一个新插件就多一项能力。下面这些是官方仓库里已经在跑的。</p>
+    </div>
+    <div class="plugins">
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#5b8cff,#2f5bea)">聊</span><div><div class="nm">大模型对话</div><div class="ds">上下文记忆 · 图片理解</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#f48fb1,#e05b8a)">歌</span><div><div class="nm">网易云点歌</div><div class="ds">搜歌 · 点播 · 音乐卡片</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#4dd0b1,#0f9d70)">视</span><div><div class="nm">视频解析</div><div class="ds">B站 · 抖音 · 直链</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#ffc766,#e39a2d)">天</span><div><div class="nm">天气查询</div><div class="ds">实时天气 · 多日趋势</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#7c9bff,#4a63d8)">签</span><div><div class="nm">每日签到</div><div class="ds">连续天数 · 数据落盘</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#a58bff,#6d4fe0)">图</span><div><div class="nm">随机壁纸</div><div class="ds">来张图 · 自定义尺寸</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#ff9f9f,#e05f5f)">赞</span><div><div class="nm">爱点赞</div><div class="ds">发「赞我」点十个赞</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#8fd48b,#3f9b45)">迎</span><div><div class="nm">入群欢迎</div><div class="ds">新人进群自动欢迎</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#ffb27a,#e07a35)">审</span><div><div class="nm">入群审批</div><div class="ds">好友与邀请先问主人</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#8e9bb3,#586378)">黑</span><div><div class="nm">黑名单</div><div class="ds">不听话的人直接静音</div></div></div>
+      <div class="plugin"><span class="pic" style="background:linear-gradient(135deg,#6f8bff,#3f5bd6)">播</span><div><div class="nm">群广播</div><div class="ds">一条消息发遍所有群</div></div></div>
+    </div>
+    <div class="plugin-more">
+      <a class="link-more" href="docs.html">插件怎么装、怎么写 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="start">
+  <div class="sec-in">
+    <div class="sec-head">
+      <span class="eyebrow">Get started</span>
+      <h2>三步，<em>就能聊上</em></h2>
+      <p class="sub">不用注册、不用填表。加好友，拉进群，然后随手说句话。</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="no">1</span>
+        <b>加她为好友</b>
+        <p>点页面上的加好友按钮，或在 QQ 里搜索号码。通过后就能私聊。</p>
+        <code>QQ 3930535663</code>
+      </div>
+      <div class="step">
+        <span class="no">2</span>
+        <b>拉进群，或直接私聊</b>
+        <p>群里 @ 她开始聊天；不想 @ 就用斜杠指令，任何群成员都能用。</p>
+        <code>@小鸟游星野 在吗</code>
+      </div>
+      <div class="step">
+        <span class="no">3</span>
+        <b>用一句指令试试</b>
+        <p>先发个 /菜单 打开使用手册，再照着里面的指引点首歌、查个天气。</p>
+        <code>/菜单</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="sec-in">
+    <div class="sec-head center">
+      <span class="eyebrow">FAQ</span>
+      <h2>你可能想问</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary><span class="q">Q</span>加好友一直没通过？<span class="plus"></span></summary>
+        <div class="a">好友申请会先转给主人确认，不一定秒过。如果长时间没反应，可能是我在忙或者申请被刷下去了，隔一会儿再试一次就好。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>为什么在群里 @ 她没反应？<span class="plus"></span></summary>
+        <div class="a">先看群设置里是否开启了「需要 @ 才能对话」，以及机器人是否被禁言。也可以直接用斜杠指令绕过 @，例如 <code>/help</code>。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>点歌只放出几十秒？<span class="plus"></span></summary>
+        <div class="a">部分歌曲需要会员才能拿完整版，未配置 Cookie 时只能给试听片段。这是版权方的限制，不是解析失败。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>视频链接打开是 403？<span class="plus"></span></summary>
+        <div class="a">B 站直链有防盗链，浏览器直接点会 403。用回复里的播放器链接打开即可；直链适合丢给下载器并带上 Referer。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>她会保存我的聊天吗？<span class="plus"></span></summary>
+        <div class="a">对话只用于生成当次回复，插件数据（签到、投稿等）落在服务器本地，不会上传到第三方。她跑在自托管实例上。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>我也想做一个这样的机器人。<span class="plus"></span></summary>
+        <div class="a">YueWuBot 是 MIT 开源的，单文件 Python 核心，一条命令就能部署。她能做什么、怎么用，<a href="docs.html">使用手册</a> 里写得更细。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:12px">
+  <div class="sec-in">
+    <div class="cta">
+      <div class="cta-in">
+        <div>
+          <h2>要不要，先打个招呼？</h2>
+          <p>她在线。发一句「在吗」也行，点一首歌也行。加好友之后，随时都能找到她。</p>
+          <div class="btns">
+            <a class="btn white" href="https://qm.qq.com/q/6MKLeBIvJu" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              加为好友
+            </a>
+            <a class="btn line" href="docs.html">看看文档</a>
+          </div>
+        </div>
+        <div class="cta-face"><img src="assets/avatar.webp" alt="小鸟游星野" width="170" height="170"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec friends" id="friends">
+  <div class="sec-in">
+    <div class="sec-head center">
+      <span class="eyebrow">Friends</span>
+      <h2>友情机器人</h2>
+      <p class="sub">同样住在 QQ 里，也值得认识一下。</p>
+    </div>
+    <div class="friend-list">
+      <a class="friend" href="https://blog.rainyday.cyou/posts/about-yuzubot/" target="_blank" rel="noopener noreferrer">
+        <span class="fav">柚</span>
+        <div class="info">
+          <b>柚子 <em>QQ 机器人</em></b>
+          <p>另一台住在 QQ 里的机器人。作者为它写了一篇介绍，点进去看看。</p>
+        </div>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/avatar-128.webp" alt="" width="40" height="40">
+        <div>
+          <b>小鸟游星野霸占地球🌏</b>
+          <p>YueWuBot 官方机器人 · QQ 3930535663<br>运行在自托管实例上，MIT 开源。</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>机器人</h4>
+        <a href="#abilities">能做什么</a>
+        <a href="#commands">常用指令</a>
+        <a href="#plugins">插件</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="foot-col">
+        <h4>资源</h4>
+        <a href="docs.html">使用手册</a>
+        <a href="#commands">常用指令</a>
+        <a href="#plugins">插件</a>
+      </div>
+      <div class="foot-col">
+        <h4>开源</h4>
+        <a href="#faq">常见问题</a>
+        <a href="https://github.com/chumianyi/yuewubot-plugins" target="_blank" rel="noopener noreferrer">插件仓库</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> YueWuBot · 官方机器人</span>
+      <a class="icp-badge" href="https://icp.gov.moe/?keyword=20260339" target="_blank" rel="noopener noreferrer" title="萌ICP备20260339号"><img src="assets/icp.svg" alt="" width="13" height="13"><span>萌ICP备20260339号</span></a>
+      <span class="spacer"></span>
+      <span class="dot-live"><i></i>页面为静态站点，不发起接口请求</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/bot.js"></script>
+</body>
+</html>

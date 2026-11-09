@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>使用手册 · 小鸟游星野</title>
+<meta name="description" content="小鸟游星野使用手册：怎么加好友、怎么在群里叫她、常用指令、插件一览与常见问题。QQ 3930535663。">
+<meta name="keywords" content="小鸟游星野,使用手册,QQ机器人,指令,插件,YueWuBot">
+<meta name="theme-color" content="#f8fbff">
+<link rel="canonical" href="https://chumianyi.github.io/bot/docs.html">
+<link rel="icon" type="image/webp" href="assets/avatar-128.webp">
+<link rel="apple-touch-icon" href="assets/avatar-128.webp">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="YueWuBot">
+<meta property="og:title" content="使用手册 · 小鸟游星野">
+<meta property="og:description" content="从加好友到日常，一页看完她怎么用。">
+<meta property="og:url" content="https://chumianyi.github.io/bot/docs.html">
+<meta property="og:image" content="https://chumianyi.github.io/bot/assets/avatar.webp">
+<link rel="stylesheet" href="assets/bot.css">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="bot-id" href="index.html" aria-label="官方机器人首页">
+      <img src="assets/avatar-128.webp" alt="小鸟游星野头像" width="34" height="34">
+      <span><b>小鸟游星野</b><small>YueWuBot 官方机器人</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="页面导航">
+      <a href="index.html#abilities">能做什么</a>
+      <a href="index.html#commands">常用指令</a>
+      <a href="index.html#plugins">插件</a>
+      <a href="docs.html">使用手册</a>
+    </nav>
+    <div class="nav-spacer"></div>
+    <a class="btn primary" href="https://qm.qq.com/q/6MKLeBIvJu" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+      加为好友
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="doc-hero">
+  <div class="doc-hero-in">
+    <img src="assets/avatar.webp" alt="小鸟游星野的头像" width="84" height="84">
+    <div class="doc-hero-txt">
+      <span class="doc-kicker">Handbook</span>
+      <h1>小鸟游星野 · 使用手册</h1>
+      <p>她住在 QQ 里，会聊天，也会点歌、解析视频、查天气，能在群里签到、看图、看门。这一页只讲一件事：怎么把她用起来。</p>
+      <div class="meta">
+        <span>QQ 3930535663</span>
+        <span>ID Kismetless</span>
+        <span>更新于 2026.11</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="doc-wrap">
+  <aside class="toc" aria-label="本页目录">
+    <b>本页目录</b>
+    <a href="#start">先加上她</a>
+    <a href="#talk">怎么和她说话</a>
+    <a href="#abilities">她能做什么</a>
+    <a href="#plugins">插件一览</a>
+    <a href="#admin">群管理</a>
+    <a href="#faq">常见问题</a>
+    <a href="#more">继续往下</a>
+  </aside>
+
+  <article class="doc">
+
+    <h2 id="start"><span class="no">01</span>先加上她</h2>
+    <p class="lead">加好友只有一种方式：点按钮、扫码，或者在 QQ 里直接搜 <strong>3930535663</strong>。通过之后就能私聊；想让她进群，把她拉进去就行，不需要额外注册或配置。</p>
+
+    <div class="fig-qr">
+      <img src="assets/qq-qr.png" alt="扫码添加小鸟游星野为好友" width="148" height="148">
+      <div class="t">
+        <b>扫码加好友</b>
+        <p>二维码指向 QQ 的加好友页面，手机上长按识别也可以。好友申请会先转给主人确认，不一定会秒过。</p>
+        <code>qq 3930535663</code>
+      </div>
+    </div>
+
+    <div class="fig-row">
+      <figure class="fig-card">
+        <img src="assets/avatar.webp" alt="小鸟游星野头像" width="74" height="74">
+        <div><b>小鸟游星野霸占地球🌏</b><span>QQ 3930535663<br>签名：已恢复人格</span></div>
+      </figure>
+      <figure class="fig-card">
+        <img src="assets/avatar-128.webp" alt="头像小图" width="74" height="74">
+        <div><b>官方机器人</b><span>基于 YueWuBot v1.4.1<br>自托管 · MIT 开源</span></div>
+      </figure>
+    </div>
+
+    <blockquote><p><b>小提示：</b>如果好友申请一直没通过，多半是申请被刷下去了。隔一会儿再发一次，或者先在群里找她。</p></blockquote>
+
+    <h2 id="talk"><span class="no">02</span>怎么和她说话</h2>
+    <p>群聊和私聊的规则不太一样。记住一张表就够：</p>
+    <table class="talk-table">
+      <thead><tr><th>发送方式</th><th>群聊</th><th>私聊</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>@她 + 内容</td><td>会回</td><td>—</td><td>最自然的聊天方式</td></tr>
+        <tr><td><code>/内容</code></td><td>不用 @</td><td>会回</td><td>斜杠指令，任何群成员都能用</td></tr>
+        <tr><td><code>#内容</code></td><td>不用 @</td><td>会回</td><td>快速群聊，适合连着说几句</td></tr>
+        <tr><td>直接发消息</td><td>不会理</td><td>会回</td><td>群里必须 @ 或带前缀</td></tr>
+        <tr><td><code>#YueWu</code></td><td>不用 @</td><td>会回</td><td>查看版本、运行时长与状态</td></tr>
+      </tbody>
+    </table>
+    <p>她记得最近十来条对话，所以可以接着上一句聊。想重新开始，发 <code>/reset</code> 清空上下文；想知道自己在她那里的信息，发 <code>/me</code>。</p>
+
+    <div class="banner"><span>群聊里 @ 她，或者用一个斜杠把指令递过去。她一直在。</span></div>
+
+    <h2 id="abilities"><span class="no">03</span>她能做什么</h2>
+    <p>不用背指令表。下面按场景分了几类，记住最常用的那一条就行，剩下的用到时再翻。</p>
+
+    <h3>聊天与听歌</h3>
+    <p>闲聊直接说，支持上下文和图片理解。想听歌，先搜再点：搜歌会回一份带序号的列表，挑一首用序号点播，她会发音乐卡片和播放直链。</p>
+    <div class="cmd-grid">
+      <div class="cmd-card"><code>/网易搜歌 晴天</code><p>搜索歌曲，返回列表与封面</p></div>
+      <div class="cmd-card"><code>/网易点歌 1</code><p>点播第 1 首，发卡片与直链</p></div>
+    </div>
+    <p>没有配置网易云 Cookie 时，部分歌曲只能拿到试听片段。这是版权方的限制，不是解析失败。</p>
+
+    <h3>视频与天气</h3>
+    <p>B 站或抖音的链接直接丢进群里，她会自己认出来，回标题、播放器链接、直链和封面。也可以显式发 <code>/解析 链接</code>。天气就一句 <code>/天气 上海</code>，回实时温度、体感、湿度和接下来几天的趋势。</p>
+
+    <h3>日常</h3>
+    <p><code>/签到</code> 记连续天数，断签会归零；<code>/来张图</code> 随机发一张壁纸，可以带尺寸；发一句「赞我」会给你点十个赞，24 小时一次。</p>
+
+    <h2 id="plugins"><span class="no">04</span>插件一览</h2>
+    <p>她的能力是一个个插件拼起来的。下面是这台机器人当前装着的插件，群里发 <code>/helps noweb</code> 也能拿到同样的清单。</p>
+    <div class="mini-plugins">
+      <div class="mini-plugin"><span class="n">01</span><div><b>网易云点歌</b><span>搜歌、点播、封面与播放直链</span></div></div>
+      <div class="mini-plugin"><span class="n">02</span><div><b>视频解析器</b><span>B 站 / 抖音链接自动解析</span></div></div>
+      <div class="mini-plugin"><span class="n">03</span><div><b>天气查询</b><span>实时天气与多日趋势</span></div></div>
+      <div class="mini-plugin"><span class="n">04</span><div><b>每日签到</b><span>连续天数，数据落盘</span></div></div>
+      <div class="mini-plugin"><span class="n">05</span><div><b>随机壁纸</b><span>随机图片，支持自定义尺寸</span></div></div>
+      <div class="mini-plugin"><span class="n">06</span><div><b>爱点赞</b><span>发「赞我」点十个赞</span></div></div>
+      <div class="mini-plugin"><span class="n">07</span><div><b>入群欢迎</b><span>新人进群自动问好</span></div></div>
+      <div class="mini-plugin"><span class="n">08</span><div><b>入群与好友审批</b><span>申请先转主人，同意后放行</span></div></div>
+      <div class="mini-plugin"><span class="n">09</span><div><b>黑名单</b><span>名单内的人无法调用功能</span></div></div>
+      <div class="mini-plugin"><span class="n">10</span><div><b>群广播</b><span>一条消息发遍所有群</span></div></div>
+      <div class="mini-plugin"><span class="n">11</span><div><b>专业模式</b><span>不套人设，直接问答</span></div></div>
+      <div class="mini-plugin"><span class="n">12</span><div><b>投稿</b><span>收集插件创意，管理员结项</span></div></div>
+    </div>
+    <p>插件会陆续增加，看到不认识的指令，先发 <code>/helps noweb</code> 看看她能做什么。</p>
+
+    <h2 id="admin"><span class="no">05</span>群管理</h2>
+    <p>需要权限的功能只有几项，普通群成员用不到，但知道它们存在有好处。</p>
+    <table class="admin-table">
+      <thead><tr><th>功能</th><th>怎么用</th><th>谁能用</th></tr></thead>
+      <tbody>
+        <tr><td>入群欢迎</td><td>新人进群自动 @ 并问好</td><td>自动</td></tr>
+        <tr><td>审批</td><td><code>/待审批</code> 查看，<code>/同意 QQ号</code> 放行</td><td>主人</td></tr>
+        <tr><td>黑名单</td><td><code>/拉黑 QQ号</code>、<code>/解封 QQ号</code>、<code>/黑名单</code></td><td>主人</td></tr>
+        <tr><td>群广播</td><td>引用一条消息，发送 <code>/广播</code></td><td>管理员</td></tr>
+        <tr><td>专业模式</td><td><code>/专家 问题</code>，走独立接口，不套提示词</td><td>所有人</td></tr>
+      </tbody>
+    </table>
+    <p>广播会把消息转发到机器人加入的所有群，来源群会跳过；每发一个群间隔一秒多，失败的会重试一次。发之前想清楚，撤不回来。</p>
+
+    <h2 id="faq"><span class="no">06</span>常见问题</h2>
+    <details open>
+      <summary><span class="q">Q</span>加好友一直没通过？<span class="plus"></span></summary>
+      <div class="a">好友申请会先转给主人确认，不一定秒过。如果长时间没反应，可能申请被刷下去了，隔一会儿再试一次。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>群里 @ 她没反应？<span class="plus"></span></summary>
+      <div class="a">先确认机器人没被禁言、群设置没有限制。也可以直接用斜杠指令绕过 @，例如 <code>/签到</code> 或 <code>/help</code>。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>点歌只放几十秒？<span class="plus"></span></summary>
+      <div class="a">部分歌曲需要会员才能拿完整版，没配置 Cookie 时只能给试听片段。换个版本或换首歌通常就好了。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>视频直链打开是 403？<span class="plus"></span></summary>
+      <div class="a">B 站直链有防盗链，浏览器直接点会 403。用回复里的播放器链接打开即可；直链更适合交给下载器并带上 Referer。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>她会保存我的聊天吗？<span class="plus"></span></summary>
+      <div class="a">对话只用于生成当次回复，上下文有长度上限，<code>/reset</code> 随时清空。签到、投稿这些插件数据落在服务器本地，不上传第三方。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>手册打不开怎么办？<span class="plus"></span></summary>
+      <div class="a">网页访问不了时，在群里发 <code>/helps noweb</code>，她会直接用纯文本把所有插件和指令列出来，不依赖网络。</div>
+    </details>
+
+    <h2 id="more"><span class="no">07</span>继续往下</h2>
+    <p>这一页讲的是「怎么用」。想看她能做什么、怎么加好友，回主页就行。</p>
+    <div class="next">
+      <a href="index.html"><small>Home</small><b>机器人主页</b><span>功能介绍、常用指令与加好友方式</span></a>
+    </div>
+
+    <div class="doc-cta">
+      <img src="assets/avatar-128.webp" alt="小鸟游星野" width="62" height="62">
+      <div>
+        <b>还差一步：打个招呼</b>
+        <p>加好友之后发一句「在吗」就行。她在线。</p>
+        <a class="btn primary" href="https://qm.qq.com/q/6MKLeBIvJu" target="_blank" rel="noopener noreferrer">加为好友</a>
+      </div>
+    </div>
+
+  </article>
+</div>
+
+<footer class="footer">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/avatar-128.webp" alt="" width="40" height="40">
+        <div>
+          <b>小鸟游星野霸占地球🌏</b>
+          <p>YueWuBot 官方机器人 · QQ 3930535663<br>运行在自托管实例上，MIT 开源。</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>手册</h4>
+        <a href="#start">先加上她</a>
+        <a href="#talk">怎么说话</a>
+        <a href="#abilities">能做什么</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="foot-col">
+        <h4>资源</h4>
+        <a href="index.html">机器人主页</a>
+        <a href="docs.html#commands">常用指令</a>
+        <a href="docs.html#faq">常见问题</a>
+      </div>
+      <div class="foot-col">
+        <h4>开源</h4>
+        <a href="index.html#plugins">插件一览</a>
+        <a href="https://github.com/chumianyi/yuewubot-plugins" target="_blank" rel="noopener noreferrer">插件仓库</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> YueWuBot · 官方机器人</span>
+      <a class="icp-badge" href="https://icp.gov.moe/?keyword=20260339" target="_blank" rel="noopener noreferrer" title="萌ICP备20260339号"><img src="assets/icp.svg" alt="" width="13" height="13"><span>萌ICP备20260339号</span></a>
+      <span class="spacer"></span>
+      <span class="dot-live"><i></i>页面为静态站点，不发起接口请求</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/bot.js"></script>
+<script>
+(function () {
+  "use strict";
+  var links = [].slice.call(document.querySelectorAll(".toc a"));
+  var heads = links.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); }).filter(Boolean);
+  function sync() {
+    var y = window.scrollY + 130, cur = heads[0];
+    heads.forEach(function (h) {
+      if (h.getBoundingClientRect().top + window.scrollY <= y) cur = h;
+    });
+    links.forEach(function (a) { a.classList.toggle("on", cur && a.getAttribute("href") === "#" + cur.id); });
+  }
+  sync();
+  window.addEventListener("scroll", sync, { passive: true });
+  window.addEventListener("resize", sync);
+})();
+</script>
+</body>
+</html>
