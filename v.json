@@ -1,0 +1,15 @@
+{
+  "version": "1.4.2",
+  "date": "2026-11-16",
+  "notes": [
+    "控制台改为 30 位字母数字访问令牌登录，安装时自动生成并写入 data/TOKEN.txt",
+    "新增 已部署后启动.sh，部署完成后直接拉起服务，不重跑安装",
+    "新增四步新手引导，完成状态自动记录",
+    "QQ 官方机器人回复带 msg_id，符合被动回复要求",
+    "开源版仅支持 QQ 官方机器人，MIT 许可证"
+  ],
+  "package": "https://chumianyi.github.io/bot/downloads/YueWuBot-1.4.2-QQ.zip",
+  "sha256": "bf3d08931d62618c85576aa1621bcf36579d82e7a22b21f6f229cbce27a3f83d",
+  "size": 245003,
+  "edition": "qq"
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>下载 — YueWuBot v1.4.2</title>
+<meta name="description" content="下载 YueWuBot v1.4.2 开源版（仅 QQ 官方机器人，MIT）与完整版说明，附 SHA-256 校验值与部署要求。">
+<meta name="theme-color" content="#070912">
+<link rel="canonical" href="https://chumianyi.github.io/download.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="下载 — YueWuBot v1.4.2">
+<meta property="og:description" content="开源版（仅 QQ 官方机器人，MIT）可直接下载；完整版增加 OneBot 与微信接入，源码私有。">
+<meta property="og:url" content="https://chumianyi.github.io/download.html">
+<meta property="og:image" content="https://chumianyi.github.io/assets/img/og-cover.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<div class="scene" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html" aria-label="YueWuBot 首页"><img src="assets/img/logo.svg" alt="" width="36" height="36"><span><b>YueWuBot</b><small>Lightweight QQ Bot</small></span></a>
+    <nav class="nav-links" aria-label="主导航"><a href="index.html#features">产品能力</a><a href="index.html#architecture">接入架构</a><a href="index.html#showcase">界面预览</a><a href="docs.html">开发文档</a><a href="download.html" style="color:#fff">下载</a></nav>
+    <div class="nav-cta">
+      <a class="gh-link" href="https://github.com/chumianyi/chumianyi.github.io" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg> GitHub</a>
+      <a class="btn primary sm" href="#packages">获取版本</a>
+    </div>
+    <button class="menu-btn" type="button" aria-label="打开菜单" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html#features">产品能力</a><a href="index.html#architecture">接入架构</a><a href="index.html#showcase">界面预览</a><a href="docs.html">开发文档</a><a href="download.html">下载</a>
+    <a href="https://github.com/chumianyi/chumianyi.github.io" target="_blank" rel="noopener noreferrer">GitHub 源码</a><a class="btn primary" href="#packages">获取版本</a>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">首页</a><span>/</span><span>下载</span></div>
+    <span class="eyebrow"><span class="dot"></span> Releases · v1.4.2</span>
+    <h1>获取 YueWuBot</h1>
+    <p>开源版（仅 QQ 官方机器人，MIT）可直接下载；完整版增加 OneBot v11 / v12 与微信官方接入，源码私有、按需分发。两个版本都不含预置配置、令牌或密钥，首次启动自动生成 30 位控制台令牌。</p>
+  </div>
+</div>
+
+<main id="main" class="wrap" style="padding-top:52px;padding-bottom:96px">
+  <div class="ver-hero reveal">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> 当前稳定版本</span>
+      <h2>v1.4.2 <span class="badge-rec" style="vertical-align:middle;font-size:11px;padding:5px 10px;letter-spacing:.5px">当前稳定版</span></h2>
+      <p>本版控制台回到访问令牌登录：安装时自动生成 30 位字母数字令牌，写入 <code>data/TOKEN.txt</code>。新增 <code>已部署后启动.sh</code>，部署完成后日常启动不再重跑安装。首次安装先阅读免责声明，输入 <code>Y</code> 或 <code>yes</code>（不区分大小写）同意后自动一键安装。</p>
+      <div class="ver-meta"><span>2026-11-16</span><span>Python 3.6+</span><span>QQ 官方机器人</span><span>MIT</span></div>
+    </div>
+    <div class="ver-side">
+      <div class="big">1.4.2</div>
+      <small>Latest release</small>
+      <a class="btn primary lg" href="#packages">查看两个版本 <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <small style="margin-top:10px">开源版 239 KB · 完整版 330 KB（私有）</small>
+    </div>
+  </div>
+
+  <div class="section-head reveal" id="packages" style="margin-top:72px;margin-bottom:0">
+    <h2>两个版本</h2>
+    <p>共用同一个核心，区别只在接入协议。开源版只做 QQ 官方这一条链路，代码公开可改；完整版叠加 OneBot 与微信，源码不公开。</p>
+  </div>
+
+  <div class="dl-grid">
+    <article class="dl-card reveal">
+      <div class="top">
+        <div class="dl-ic"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 19h16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h3>开源版（仅 QQ 官方）</h3><div class="tagline">YueWuBot-1.4.2-QQ.zip</div></div><span class="badge-rec">推荐</span>
+      </div>
+      <p>只接 <strong>QQ 官方机器人</strong>，AppID + AppSecret 即上线。开放平台网关、访问令牌刷新、心跳与被动回复全部开源，九个内置插件、完整控制台与四步新手引导。适合二次开发、自建与源码审计。</p>
+      <div class="dl-facts"><span>239 KB</span><span>Python 3.6+</span><span>QQ 官方</span><span>MIT</span></div>
+      <a class="btn primary" href="downloads/YueWuBot-1.4.2-QQ.zip" download>下载开源版 <svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </article>
+    <article class="dl-card reveal d1">
+      <div class="top">
+        <div class="dl-ic"><svg viewBox="0 0 24 24"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h3>完整版（私有）</h3><div class="tagline">YueWuBot-1.4.2-src-Repo.zip</div></div>
+      </div>
+      <p>在开源版基础上增加 <strong>OneBot v11 / v12</strong> 与 <strong>微信官方机器人</strong> 接入，可对接 NapCat、SnowLuma 等第三方实现。十三个内置插件，包含点赞、入群与好友审批、群广播。同一套模型、插件与控制台。<strong>源码不公开，不提供公开下载。</strong></p>
+      <div class="dl-facts"><span>330 KB</span><span>Python 3.6+</span><span>OneBot + 微信</span><span>私有</span></div>
+      <a class="btn" href="docs.html#editions">查看完整版说明 <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </article>
+  </div>
+
+  <div class="section-head reveal" id="verify" style="margin-top:76px;margin-bottom:0">
+    <h2>完整性校验</h2>
+    <p>下载后建议核对 SHA-256。以下校验值由本页发布时的文件直接计算得出。</p>
+  </div>
+  <div class="codebox reveal d1" style="margin-top:24px">
+    <div class="code-head"><div class="dots"><i></i><i></i><i></i></div><span>终端 · 校验命令</span><button class="copy" type="button" aria-label="复制命令"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg> 复制</button></div>
+    <pre><span class="k">sha256sum</span> YueWuBot-1.4.2-QQ.zip
+<span class="c">输出应为：bf3d08931d62618c85576aa1621bcf36579d82e7a22b21f6f229cbce27a3f83d</span></pre>
+  </div>
+  <div class="hash-box reveal">
+    <b>开源版（仅 QQ 官方）</b>　bf3d08931d62618c85576aa1621bcf36579d82e7a22b21f6f229cbce27a3f83d<br>
+    <span class="hash-note">文件 239 KB · MIT · Python 3.6+ · 解压后执行 start.sh</span><br><br>
+    <b>完整版（私有）</b>　不提供公开下载，校验值随分发渠道单独提供<br>
+    <span class="hash-note">文件 330 KB · 私有许可 · Python 3.6+ · 解压后执行 start.sh</span>
+  </div>
+
+  <div class="section-head reveal" style="margin-top:76px;margin-bottom:0">
+    <h2>部署要求</h2>
+    <p>只需 Python 与一个模型接口，不需要 Docker、数据库或额外服务。</p>
+  </div>
+  <div class="cards c3 reveal d1" style="margin-top:24px">
+    <div class="mini-card"><div class="mini-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Python 3.6+</h3><p>核心程序依赖 <code>aiohttp</code>，由安装脚本自动装入项目内虚拟环境，不污染系统环境。</p><span class="meta">唯一运行时依赖</span></div>
+    <div class="mini-card"><div class="mini-ic"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="m11 11 8 8M16 16l2-2M18 18l2-2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>模型 API Key</h3><p>在控制台「模型」页填写任何 OpenAI 兼容接口的地址与密钥，配置即生效，无需改代码。</p><span class="meta">登录后配置</span></div>
+    <div class="mini-card"><div class="mini-ic"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>无需 Docker</h3><p>单进程运行，常驻内存约 40 MB；QQ 官方机器人只需在开放平台创建应用并加入群。</p><span class="meta">零额外服务</span></div>
+  </div>
+
+  <div class="codebox reveal" style="margin-top:28px">
+    <div class="code-head"><div class="dots"><i></i><i></i><i></i></div><span>终端 · 三步启动</span><button class="copy" type="button" aria-label="复制命令"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg> 复制</button></div>
+    <pre><span class="k">unzip</span> YueWuBot-1.4.2-QQ.zip <span class="k">&amp;&amp;</span> <span class="k">cd</span> YueWuBot-1.4.2-QQ
+./start.sh          <span class="c">阅读免责声明后输入 Y 或 yes 同意，自动装依赖并生成令牌</span>
+./start.sh token    <span class="c">查看 30 位令牌，登录 http://127.0.0.1:6199</span>
+
+<span class="c">部署完成后，日常启动只用这一条</span>
+./已部署后启动.sh</pre>
+  </div>
+  <p class="compare-note" style="margin-top:14px">完整参数、systemd 管理与环境变量说明见 <a href="docs.html#install" style="color:#cabdff">开发文档 · 安装与运行</a>。</p>
+
+  <div class="note reveal" style="margin-top:42px"><b>版本说明：</b>开源版以 MIT 分发，可自由修改与再发布，但需保留版权声明。完整版源码不公开，仅按约定分发，请勿转售或公开传播。两个版本都不含预置配置、令牌或密钥，首次启动自动生成。历史构建保留在 <a href="https://github.com/chumianyi/chumianyi.github.io/releases" target="_blank" rel="noopener noreferrer" style="color:#d9d1ff">GitHub Releases</a>。</div>
+
+  <div class="section-head reveal" id="deps" style="margin-top:76px;margin-bottom:0">
+    <h2>依赖源与多架构支持</h2>
+    <p>安装脚本按固定顺序尝试三个依赖源，任一成功即继续，无需手动干预。</p>
+  </div>
+  <div class="cards c3 reveal d1" style="margin-top:24px">
+    <div class="mini-card"><div class="mini-ic"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>1 · 本站托管包</h3><p><code>https://chumianyi.github.io/pip/</code> 提供按架构预编译的 wheel 与平台无关通用包，离线友好。</p><span class="meta">默认首选</span></div>
+    <div class="mini-card"><div class="mini-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke-linecap="round"/></svg></div><h3>2 · 中科大源</h3><p>首选源不可用或架构未命中时自动切换，覆盖更多 Python 版本。</p><span class="meta">自动降级</span></div>
+    <div class="mini-card"><div class="mini-ic"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>3 · 清华源</h3><p>最后一级备用，前两级均失败时兜底，保证依赖可安装。</p><span class="meta">最终兜底</span></div>
+  </div>
+  <div class="note reveal" style="margin-top:24px"><b>架构覆盖：</b>托管包含 x86_64 / X64 / x86-x64 / AMD64、ARM64 / aarch64、X86 / i686 的 Python 3.6 预编译 wheel，另附平台无关的源码包与纯 Python wheel，可覆盖其他架构与更高的 Python 版本。详见 <a href="pip/" style="color:#cabdff">托管包索引</a>。</div>
+
+  <div class="cta-band reveal" style="margin-top:56px">
+    <h2>还不确定从哪开始？</h2>
+    <p>先读一遍开发文档，五分钟就能了解整个部署流程。</p>
+    <div class="hero-actions"><a class="btn primary lg" href="docs.html">阅读开发文档</a><a class="btn lg" href="index.html">返回首页</a></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="36" height="36"><span><b>YueWuBot</b><small>Lightweight QQ Bot</small></span></a><p>极简、可控、随时在线的 QQ 机器人。单文件 Python 核心，自托管，开源版 MIT。</p></div>
+      <div class="foot-col"><h4>产品</h4><a href="index.html#features">产品能力</a><a href="index.html#architecture">接入架构</a><a href="index.html#showcase">界面预览</a><a href="index.html#faq">常见问题</a></div>
+      <div class="foot-col"><h4>资源</h4><a href="docs.html">开发文档</a><a href="docs.html#plugin">插件规范</a><a href="download.html#verify">SHA-256 校验</a><a href="https://github.com/chumianyi/chumianyi.github.io/releases" target="_blank" rel="noopener noreferrer">版本发布</a></div>
+      <div class="foot-col"><h4>下载</h4><a href="downloads/YueWuBot-1.4.2-QQ.zip" download>开源版 1.4.2</a><a href="download.html#packages">完整版说明</a><a href="download.html#verify">完整性校验</a></div>
+      <div class="foot-col"><h4>开源</h4><a href="https://github.com/chumianyi/chumianyi.github.io" target="_blank" rel="noopener noreferrer">GitHub 仓库</a><a href="https://github.com/chumianyi/chumianyi.github.io/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT 许可证</a><a href="https://github.com/chumianyi/chumianyi.github.io/issues" target="_blank" rel="noopener noreferrer">问题反馈</a></div>
+    </div>
+    <div class="foot-bottom"><span>© <span data-year>2026</span> YueWuBot · Released under the MIT License.</span><span class="spacer"></span><span class="status-chip"><i></i> 本站为静态站点，无后端服务</span></div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
